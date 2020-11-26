@@ -7,6 +7,21 @@ public class Main {
         listDemo();
         setDemo();
         sortedSetDemo();
+        mapDemo();
+    }
+
+    private static void mapDemo() {
+        System.out.println("---Map Demo---");
+        Map<String, String> map = new HashMap<>();
+        map.put("key1", "value1");
+        map.put("key2", "value2");
+        map.put("Bob", "Marley");
+        for (String key : map.keySet()) {
+            System.out.println("["+key+":"+map.get(key)+"]");
+        }
+        for (Map.Entry<String, String> e : map.entrySet()) {
+            System.out.println("["+e.getKey()+":"+e.getValue()+"]");
+        }
     }
 
     private static void sortedSetDemo() {
